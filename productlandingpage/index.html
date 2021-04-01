@@ -1,0 +1,298 @@
+<html>
+  <head>
+    <title>Product Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+      .flex{
+        width: 100%;
+        display: flex;
+        padding: 8px 0;
+        justify-content: space-between;
+      }
+      #header-img {
+        width: 130px;
+      }
+      #nav-bar ul {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        margin-bottom: 0;
+      }
+      .bg-grad {
+        background: linear-gradient(180deg, #9206ef, #028ddc);
+      }
+
+      .contact-form {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #services{
+          padding-top: 32px;
+      }
+
+      .service div{
+           border: 1px solid #e0e0e0;
+           padding: 32px 16px;
+           margin-bottom: 32px;
+      }
+
+      .service div p{
+          margin-bottom: 0;
+          color: #9206ef;
+      }
+
+      .service img{
+          width: 85px;
+          height: 85px;
+          border: 4px solid #9206ef;
+          padding: 12px;
+          border-radius: 8px;
+          margin-bottom: 4px;
+          background-color: #fff;
+      }
+
+      .fixed{
+          position: fixed;
+          width: 100%;
+      }
+
+      h2 span{
+          font-size: 20px;
+      }
+      h2 span u{
+          text-decoration: none;
+          border-bottom: 4px solid #fff;
+      }
+
+      .price{
+          padding: 32px;
+      }
+
+      .shadow {
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+        }
+      .bg-custom{
+          background-color: var(--indigo);
+      }
+      @media (max-width: 500px) {
+        #header {
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container-fluid bg-light m-0 p-0">
+      <section>
+        <header id="header" class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+            <div class="container">
+            <div class="flex">
+          <div class="headerImage">
+            <img src="logo.svg" alt="" id="header-img" />
+          </div>
+          <nav id="nav-bar">
+            <ul class="clean">
+              <li><a href="#home" class="nav-link">Home</a></li>
+              <li><a href="#services" class="nav-link">Services</a></li>              
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+        </header>
+      </section>
+
+      <div class="container-fluid bg-grad mt-5" id="home">
+        <div class="container">
+          <div class="row">
+            <section class="col-md-12 contact-form text-center mt-4 mb-4">
+              <h2 class="text-white pt-5">
+                We help discover the best <span class="d-block"><u>wellness experts</u> across India.</span>
+              </h2>
+
+              <div class="col-md-6 mt-4">
+                  <form id="form" action=" https://www.freecodecamp.com/email-submit">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="form-control"
+                  placeholder="Enter your email address"
+                />
+                <input type="submit" id="submit" class="btn btn-danger mt-3 btn-lg" value="Get Started">
+                  
+                  </input>
+            </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-5" id="services">
+             
+
+          <div class="row">
+            <div class="col-md-12 text-center mt-4" >
+                     <h2>Our Services</h2>
+                     <p class="lead">categories to help you discover the right articles for your health</p>
+            </div>
+            
+       </div>
+       <div class="row mt-4">
+           <div class="col-md-4 text-center service">
+               <div class="bg-white shadow">
+                 <img src="heart.svg" alt="heart image"/>
+                 <p>Cardiology</p>
+                 <small>Specializes in treating diseases of the cardiovascular</small>
+                 </div>
+           </div>
+
+           <div class="col-md-4 text-center service">
+               <div class="bg-white shadow">
+            <img src="lungs.svg" alt="lungs image"/>
+            <p>Pulmonology</p>
+            <small>Health of the respiratory system</small>
+            </div>
+      </div>
+
+      <div class="col-md-4 text-center service">
+          <div class="bg-white shadow">
+        <img src="lotus.svg" alt="heart image"/>
+        <p>Physcology</p>
+        <small>Scientific study of the mind and behavior</small>
+        </div>
+  </div>
+       </div>
+      </div>
+
+      
+
+      <div class="container-fluid bg-white " id="about">
+         <div class="container ">
+            <div class="row">
+                <div class="col-md-12 text-center mt-4 mb-5" >
+                         <h2 class="mt-3 ">About us</h2>
+                         <p class="lead mb-4">Listen to what our exprerts say about our product</p>
+
+                         <iframe id="video" width="100%" height="450" src="https://www.youtube.com/embed/4wSPBZ9emfk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+           </div>
+         </div>
+      </div>
+
+      <div class="container pb-5" id="pricing">
+           <div class="row">
+               <div class="col-md-12 text-center mt-3">
+                <h2 class="mt-3 ">Pricing</h2>
+                <p class="lead mb-4">Choose the best pricing option suited for your needs</p>
+               </div>
+                <div class="col-md-4 mt-4">
+                     <div class="price shadow">
+                        <table class="table m-0">
+                            <tbody>
+                                <tr class="bg-custom text-white">
+                                    <td ><b>Standard</b></td>                                   
+                                </tr>
+                                <tr>
+                                 <td>$100</td>
+                                </tr>
+                                <tr>                                   
+                                 <td>24/7 support</td>
+                                </tr>
+                                <tr>                                   
+                                 <td>Special Offers<br/><br/><br/></td>
+                                </tr>
+                            </tbody>
+                       </table>
+                     </div>
+                </div>
+
+                <div class="col-md-4 mt-4">
+                    <div class="price shadow">
+                       <table class="table m-0">
+                           <tbody>
+                               <tr class="bg-custom text-white">
+                                   <td ><b>Gold</b></td>                                   
+                               </tr>
+                               <tr>
+                                <td>$159</td>
+                               </tr>
+                               <tr>                                   
+                                <td>24/7 support + relationship officer <br/><br/></td>
+                               </tr>
+                               <tr>                                   
+                                <td>Special Offers + free medicines + free delivery</td>
+                               </tr>
+                           </tbody>
+                      </table>
+                    </div>
+               </div>
+
+               <div class="col-md-4 mt-4">
+                <div class="price shadow">
+                   <table class="table m-0">
+                       <tbody>
+                           <tr class="bg-custom text-white">
+                               <td ><b>Diamond</b></td>                                   
+                           </tr>
+                           <tr>
+                            <td>$399</td>
+                           </tr>
+                           <tr>                                   
+                            <td>On demand video calling with doctors anytime</td>
+                           </tr>
+                           <tr>                                   
+                            <td>Special Offers + free medicines + free diagnostics</td>
+                           </tr>
+                       </tbody>
+                  </table>
+                </div>
+           </div>
+           </div>
+    </div>
+
+    <footer class="container-fluid bg-dark">
+         <div class="container text-white">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                     <p class="mb-0 p-3">Copyright &COPY; 2021 Reach Inc.</p>
+                </div>
+            </div>
+         </div>
+    </footer>
+    </main>
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>
